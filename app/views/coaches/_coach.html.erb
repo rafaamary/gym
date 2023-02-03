@@ -1,0 +1,31 @@
+<div id="<%= dom_id coach %>">
+  <p>
+    <strong>Name:</strong>
+    <%= coach.name %>
+  </p>
+
+  <p>
+    <strong>Sobrenome:</strong>
+    <%= coach.sobrenome %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= coach.phone %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= coach.email %>
+  </p>
+
+  <p>
+    <strong>Username:</strong>
+    <%= coach.username %>
+  </p>
+
+  <p>
+    <strong>Academia:</strong>
+    <%= Academy.find(coach.academy_id).name %>
+  </p>
+</div>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @academy %>
+
+<div>
+  <%= link_to "Edit this academy", edit_academy_path(@academy) %> |
+  <%= link_to "Back to academies", academies_path %>
+
+  <%= button_to "Destroy this academy", @academy, method: :delete %>
+</div>

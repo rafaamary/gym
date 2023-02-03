@@ -1,0 +1,32 @@
+<div id="<%= dom_id membership %>">
+  <p>
+    <strong>Name:</strong>
+    <%= membership.name %>
+  </p>
+
+  <p>
+    <strong>Sobrenome:</strong>
+    <%= membership.sobrenome %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= membership.phone %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= membership.email %>
+  </p>
+
+  <p>
+    <strong>Username:</strong>
+    <%= membership.username %>
+  </p>
+
+  <p>
+    <strong>Coach:</strong>
+    <%= Coach.find(membership.coach_id).username %>
+  </p>
+
+</div>
